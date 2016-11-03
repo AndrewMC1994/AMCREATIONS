@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|PT+Sans|Raleway|Roboto|Rubik|Source+Sans+Pro" rel="stylesheet">
+
+    <title>AMCREATIONS</title>
+</head>
+
+<body>
+
+    <div id="container">
+    
+        <!--LOGO-->
+
+        <!--NAV BAR-->
+
+        <div id="wrappernav">
+
+            <ul class="navbar">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="https://www.tumblr.com/blog/ixdbelfastandrew">BLOG</a></li>
+                <li><a href="https://www.behance.net/gallery/26593385/Logo-Works-No1">PORTFOLIO</a></li>
+                <li><a href="#contact">LETS CHAT</a></li>
+            </ul>
+
+        </div>
+
+        <!--SVG IMAGES-->
+
+        <div id="wrapperlighthouse">
+
+            <img src="image/lighthouse.svg" id="lighthouse">
+            
+            <img id="windmill" src="image/windmill.png" />
+
+            <img src="image/cloud.png" id="cloud1">
+            <img src="image/cloud.png" id="cloud2">
+            
+            <img src="image/mountainupper.svg" id="upper" class="animated slideInUp" >
+            
+            <img src="image/mountainlower.svg" id="lower" class="animated slideInUp" >
+            
+        </div>
+
+        <!--CONTENT AREA -->
+
+        <div id="wrapperabout">
+            
+            <img id=cloudbanner src="image/cloudbanner.svg" />
+
+            <h1>A little bit of information <br> <span data-shadow-text="ABOUT-ME" class="expandUp">ABOUT-ME</span><br> and what i do...</h1>
+
+            <p id="topp">
+                <p>My name is
+                    <spangreen><i> Andrew McCaughey</spangreen></i>
+                        <br>I love creating
+                        <br>
+                        <spangreen><i>strange</spangreen></i> and
+                            <spangreen><i>quirky</spangreen></i> designs
+                                <br>like this website...</p>
+
+                <p id="bottomp"> I create
+                    <spangreen><i>graphic </spangreen></i>and
+                        <spangreen><i>web </spangreen></i>designs
+                            <br>but I also dabble
+                            <br>in
+                            <spangreen><i>photography, video editing<br>and UI/UX design.</p></spangreen></i>
+                               
+        <div class="ExpandUp">
+                                
+                                <img id="character" src="image/character.svg" class="expandUp">
+                                
+        </div>                        
+
+                                <img id="rotateplane" src="image/bend.svg" />
+                                
+                                </div>
+                                
+    <div class='contact'>      
+                                
+                                            
+         <a href="casestudy1.html"><img id="casestudy1" src="image/casestudy1.jpg" target="_blank"> /></a>
+            
+                                                           
+         <a href="casestudy2.html"><img id="casestudy2" src="image/casestudy2.jpg" target="_blank"> /></a>                                                                                                                                   
+
+            </div>                                                                                                                                                      
+
+                                <!--FOOTER-->
+
+                                <footer>
+
+                                    <div class='contact'>
+
+                                        <a id="contact"></a>
+
+                                        <img class="me" src="image/me.svg" />
+
+                                        <h2>Let's Chat</h2>
+
+                                        <!--SOCIAL MEDIA ICONS-->
+
+                                        <div class="socialmedia">
+
+                                            <a href="https://twitter.com/AndrewMcCaughey" target="_blank"><img src="image/twitter.svg" id="twitter"></a>
+                                            <a href="https://www.behance.net/graphizwizz" target="_blank"><img src="image/behance.svg" id="behance"></a>
+                                            <a href="https://www.youtube.com/channel/UCVV5Bb6eflSDhLboZK-UVjw" target="_blank"><img src="image/youtube.svg" id="youtube"></a>
+                                            <a href="https://uk.linkedin.com/in/andrew-mccaughey-160815b8" target="_blank"><img src="image/linkedin.svg" id="linkedin"></a>
+                                            <a href="https://www.instagram.com/?hl=en" target="_blank"><img src="image/instagram.svg" id="instagram"></a>
+
+                                        </div>
+
+                                        <!--CONTACT BOX-->
+
+                                        <form>
+                                            <input name="name" type="text" class="feedback-input" placeholder="Name" />
+                                            <input name="email" type="text" class="feedback-input" placeholder="Email" />
+                                            <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+                                            <input type="submit" value="SUBMIT" />
+                                        </form>
+
+                                    </div>
+                                    
+                                </footer>
+
+        </div>
+
+        <!--JAVASCRIPT -->
+
+        <script src="jquery/jquery-3.1.1.min.js"></script>
+        <script src="jquery/navscroll.js"></script>
+
+        <!--REVEAL IMAGE ON SCROLL-->
+
+        <script>
+            $(window).scroll(function () {
+                $('.ExpandUp').each(function () {
+                    var imagePos = $(this).offset().top;
+
+                    var topOfWindow = $(window).scrollTop();
+                    if (imagePos < topOfWindow + 1000) {
+                        $(this).addClass("expandUp");
+                    }
+                });
+            });
+        </script>
+
+        <!--SMOOTH SCROLL-->
+
+        <script>
+            $(document).ready(function () {
+                $('a[href^="#"]').on('click', function (e) {
+                    e.preventDefault();
+
+                    var target = this.hash;
+                    var $target = $(target);
+
+                    $('html, body').stop().animate({
+                        'scrollTop': $target.offset().top
+                    }, 900, 'swing', function () {
+                        window.location.hash = target;
+                    });
+                });
+            });
+        </script>
+
+        <!--SCROLL TO TOP ON REFRESH-->
+
+        <script>
+            window.onbeforeunload = function () {
+                window.scrollTo(0, 0);
+            };
+        </script>
+
+        <!--NAV FADE-->
+
+        <script type="text/javascript">
+            window.onscroll = fadeNav;
+        </script>
+
+        <!--DAY AND NIGHT CYCLE-->
+
+        
+            <!--
+            function getStylesheet() {
+                var currentTime = new Date().getHours();
+                if (0 <= currentTime && currentTime < 5) {
+                    document.write("<link rel='stylesheet' href='css/night.css' type='text/css'>");
+                }
+                if (5 <= currentTime && currentTime < 11) {
+                    document.write("<link rel='stylesheet' href='css/night.css' type='text/css'>");
+                }
+                if (11 <= currentTime && currentTime < 16) {
+                    document.write("<link rel='stylesheet' href='css/day.css' type='text/css'>");
+                }
+                if (16 <= currentTime && currentTime < 22) {
+                    document.write("<link rel='stylesheet' href='css/day.css' type='text/css'>");
+                }
+                if (22 <= currentTime && currentTime <= 24) {
+                    document.write("<link rel='stylesheet' href='css/night.css' type='text/css'>");
+                }
+            }
+
+            getStylesheet();
+            -->
+        
+
+        <noscript>
+            <link href="main.css" rel="stylesheet">
+        </noscript>
+
+</body>
+
+</html>

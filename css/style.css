@@ -1,0 +1,640 @@
+/* FONTS */
+
+@font-face {
+    font-family: 'LucidaGrande';
+    src: url('fonts\LucidaGrande.eot') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* TOP CONTENT */
+
+body {
+    background-color: #69CDED;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+container{
+    
+width:100%;    
+    
+}
+
+/* NAV BAR */
+
+#wrappernav {
+    height: 60px;
+    width: 100%;
+    display: block;
+    background-color: white;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+}
+
+.navbar {
+    font-size: 1em;
+    font-family: 'Montserrat';
+}
+
+.navbar.trans {
+    background: transparent !important;
+}
+
+.navbar li {
+    padding: 0;
+    letter-spacing: 0.3em;
+    display: inline;
+}
+
+.navbar a {
+    display: inline-block;
+    padding: 0px;
+    color: black;
+    text-decoration: none;
+    padding: 0px 170px;
+}
+
+.navbar a:hover {
+    color: #EC313C;
+}
+
+/* WINDMILL ANIMATION */
+
+#wrapperlighthouse {
+    width: 100%;
+    height: 100%;
+}
+
+#lighthouse {
+    width: 20%;
+    top: 30%;
+    left: 11.57%;
+    position: absolute;
+}
+
+#windmill {
+    width: 10%;
+    left: 17.06%;
+    top: 35.8%;
+    -webkit-animation: windmill 4s infinite linear;
+    -moz-animation: windmill 4s infinite linear;
+    -o-animation: windmill 4s infinite linear;
+    -ms-animation: windmill 4s infinite linear;
+    animation: windmill 4s infinite linear;
+    position: absolute;
+}
+
+@-webkit-keyframes windmill {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes windmill {
+    0% {
+        -moz-transform: rotate(0deg);
+    }
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-o-keyframes windmill {
+    0% {
+        -o-transform: rotate(0deg);
+    }
+    100% {
+        -o-transform: rotate(360deg);
+    }
+}
+
+@-ms-keyframes windmill {
+    0% {
+        -ms-transform: rotate(0deg);
+    }
+    100% {
+        -ms-transform: rotate(360deg);
+    }
+}
+
+#upper{
+    width: 80%;
+    top:0%;
+    left:60.57%;
+    position: absolute;
+}
+
+#lower{
+    width: 80%;
+    top:30%;
+    left:30.57%;
+    position: absolute;
+    z-index:-1;
+    animation-delay: 0.10s;
+}
+
+/* CLOUDS */
+
+#cloud1 {
+    width: 5.5%;
+    left: 7%;
+    top:50%;
+    position: absolute;
+}
+
+#cloud2 {
+    width: 4.5%;
+    top:50%;
+    left: 650px;
+    position: absolute;
+}
+
+/* CONTENT */
+
+#wrapperabout {
+    max-width: 100%;
+    max-height:100%;
+    top:50em;
+    position: relative;
+    
+}
+
+#cloudbanner {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    position: absolute;
+}
+
+
+#character {
+    width: 14%;
+    top:19em;
+    left: 15%;
+    z-index: 1;
+    position: absolute;
+}
+
+h1 {
+    font: 600 1.5em/1 'Raleway', sans-serif;
+    color: rgba(0,0,0,.5);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    position: absolute;
+    top:8em;
+    left:9em;
+    width: 100%;
+    
+}
+
+p {
+    font: 600 1.5em/1 'Raleway', sans-serif;
+    color: rgba(0, 0, 0, .5);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    position: absolute;
+    top:24em;
+    left:11em;
+    width: 100%;
+    line-height: 1.8em;
+}
+
+#bottomp {
+     top:33em;
+     left:11em;
+}
+
+spangreen {
+    color: #609440;
+}
+
+span,
+span:after {
+    font-weight: 900;
+    color: #609440;
+    white-space: nowrap;
+    display: inline-block;
+    position: relative;
+    letter-spacing: .1em;
+    padding: .2em 0 .25em 0;
+}
+
+span {
+    font-size: 4em;
+    z-index: 100;
+    text-shadow: .04em .04em 0 #9cb8b3;
+}
+
+span:after {
+    content: attr(data-shadow-text);
+    color: rgba(0, 0, 0, .35);
+    text-shadow: none;
+    position: absolute;
+    left: .0875em;
+    top: .0875em;
+    z-index: -1;
+    -webkit-mask-image: url(http://f.cl.ly/items/1t1C0W3y040g1J172r3h/mask.png);
+}
+
+/* PLANE ANIMATION */
+
+#rotateplane{
+    top: 3em;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: -1;
+    -webkit-animation: plane 200s infinite linear;
+    -moz-animation: plane 200s infinite linear;
+    -o-animation: plane 200s infinite linear;
+    -ms-animation: plane 200s infinite linear;
+    animation: plane 200s infinite linear;
+    position: absolute;
+}
+
+@-webkit-keyframes plane {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(-360deg);
+    }
+}
+
+@-moz-keyframes plane {
+    0% {
+        -moz-transform: rotate(0deg);
+    }
+    100% {
+        -moz-transform: rotate(-360deg);
+    }
+}
+
+@-o-keyframes plane {
+    0% {
+        -o-transform: rotate(0deg);
+    }
+    100% {
+        -o-transform: rotate(-360deg);
+    }
+}
+
+@-ms-keyframes plane {
+    0% {
+        -ms-transform: rotate(0deg);
+    }
+    100% {
+        -ms-transform: rotate(-360deg);
+    }
+}
+
+#casestudy1{
+    
+background-color: #E01E37;
+width: 40%;
+height: 40;
+bottom:90em;
+display: block;
+margin: 0 auto;
+position: relative; 
+border:5px solid white;
+    
+}
+
+#casestudy2{
+    
+background-color: #E01E37;
+width: 40%;
+height: 40;
+bottom:80em;
+display: block;
+margin: 0 auto;
+position: relative;
+border:5px solid white;
+    
+}
+
+
+#casestudy1:hover {
+    opacity: 0.8;
+}
+
+
+#casestudy2:hover {
+    opacity: 0.8;
+}
+
+/* CONTACT SECTION */
+
+.contact {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    top: 4500px;
+    padding-top: 50px;
+    right: 0;
+    position: absolute;
+}
+
+.me {
+    width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    top: 100px;
+    right: 0;
+    position: relative;
+}
+
+h2 {
+    font: 600 1.5em/1 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    position: relative;
+    top: 12%;
+    right: -5px;
+    font-size: 34px;
+    color: #474747;
+    text-align: center;
+}
+
+form {
+    margin-top: 145px;
+    max-width: 420px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.feedback-input {
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border: 2px solid #69CDED;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+.feedback-input:focus {
+    border: 2px solid #EC313C;
+}
+
+textarea {
+    height: 150px;
+    line-height: 150%;
+    resize: vertical;
+}
+
+[type="submit"] {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    width: 100%;
+    background: #69CDED;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.3s;
+    margin-top: -4px;
+    font-weight: 700;
+}
+
+[type="submit"]:hover {
+    background: #CC4949;
+}
+
+
+/* SOCIAL MEDIA */
+
+.socialmedia {
+    position: absolute;
+    width: 100%;
+    top: 93%;
+    text-align: center;
+    transform: translateY(-50%);
+}
+
+#twitter,
+#instagram,
+#youtube,
+#linkedin,
+#behance {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 40px;
+    border: 2px dashed white;
+    transition: .5s;
+    color: #D7D0BE;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2), 0 1px 0 rgba(255, 255, 255, 0.2);
+    font-size: 70px;
+    text-decoration: none;
+}
+
+#twitter:hover,
+#instagram:hover,
+#youtube:hover,
+#linkedin:hover,
+#behance:hover {
+    opacity: 0.5;
+}
+
+/* CASE STUDY 1 - POWER OF VIDEO */
+
+#imagecasestudy {
+    background-color: white;
+    height: 100%;
+    width:100%;
+}
+
+.casestudy {
+    background-color: white;
+    height: 100%;
+}
+
+#cover {
+    width: 70%;
+    top: 5em;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+
+#mac {
+    width: 50%;
+    bottom: 530px;
+    left: 35%;
+    position: relative;
+    z-index:1;
+}
+
+#grid {
+    width: 100%;
+    top:25em;
+    margin: 0 auto;
+    position: relative;
+}
+
+.textbox1 {
+    background-color: #E01E37;
+    width: 70%;
+    height: 26.5em;
+    bottom:39.5em;
+    margin: 0 auto;
+    position: relative;
+}
+
+.textbox2 {
+    background-color: #a3aaad;
+    width: 70%;
+    height: 26.5em;
+    bottom:39.5em;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+.back {
+    height: 150px;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    font-family: 'Montserrat';
+}
+
+h1new {
+    font: 600 1.5em/1 'Raleway', sans-serif;
+    color: WHITE;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    position: absolute;
+    top: 8%;
+    left: 5%;
+    width: 100%;
+    line-height: 1.8em;
+}
+
+h1new2 {
+    font: 600 1.5em/1 'Raleway', sans-serif;
+    color: WHITE;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    position: absolute;
+    top: 8%;
+    left:14.3%;
+    width: 100%;
+    line-height: 1.8em;
+}
+
+pnew {
+    font: 1.5em/1 'Source Sans Pro', sans-serif;
+    color: WHITE;
+    letter-spacing: .1em;
+    position: absolute;
+    font-size: 15px;
+    top: 31%;
+    left: 5%;
+    width: 90%;
+    line-height: 2.5em;
+}
+
+#button1 {
+    position: absolute;
+    width: 15%;
+    bottom: 2.7em;
+    left: 8%;
+    color: #D7D0BE;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2), 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+#button1:hover {
+    opacity: 0.8;
+}
+
+
+#button2 {
+    position: absolute;
+    width: 15%;
+    bottom: 4em;
+    left: 8%;
+    color: #D7D0BE;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2), 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+#button2:hover {
+    opacity: 0.8;
+}
+
+#bar {
+    width: 20%;
+    top: 80px;
+    left: 170px;
+    position: relative;
+}
+
+/* MEDIA QUERIES */
+
+
+/* Tablets in landscape mode (981-1100px) */
+
+@media only screen and ( min-width: 981px) and ( max-width: 1100px) {
+    .contact {
+        width: 70%;
+    }
+}
+
+
+/* Tablets in portrait mode (768-980px) */
+
+@media only screen and ( min-width: 768px) and ( max-width: 980px) {
+    .contact {
+        width: 70%;
+    }
+}
+
+
+/* Smartphones in landscape mode (480-768px) */
+
+@media only screen and ( min-width: 480px) and ( max-width: 767px) {
+    .contact {
+        width: 70%;
+    }
+}
+
+
+/* Smartphones in portrait mode (0-479px) */
+
+@media only screen and ( max-width: 479px) {
+    .contact {
+        width: 70%;
+    }
+}
